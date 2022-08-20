@@ -1,0 +1,11 @@
+2022-07-16 21:39:38 info: GET ::1 /v1/words
+2022-07-16 22:05:24 info: POST ::1 /v1/words/add
+2022-07-16 22:05:24 error: internal server error
+2022-07-16 22:05:24 info: internal server error
+2022-07-16 22:06:41 info: GET ::1 /v1/words
+2022-07-16 22:08:34 info: POST ::1 /v1/words/add
+2022-07-16 22:08:34 error: internal server error
+2022-07-16 22:08:34 info: internal server error
+2022-07-16 22:12:47 info: POST ::1 /v1/words/add
+2022-07-16 22:12:47 error: internal server error
+2022-07-16 22:12:47 info: internal server error

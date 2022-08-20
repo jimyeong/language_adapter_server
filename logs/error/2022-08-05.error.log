@@ -1,0 +1,38 @@
+2022-08-05 11:59:42 error: POST /v1/quizes no Router there
+2022-08-05 12:00:26 error: [{"val":"\n                    (select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words\n                    where user_id = 1))\n                "}] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']
+2022-08-05 12:02:11 error: [{"val":"\n                    select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words\n                    where user_id = 1)\n                "}] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']
+2022-08-05 12:04:06 error: Error in results, duplicate field name `meaning_id`.
+(see option `checkDuplicate`)
+sql: SELECT `usecase_id`, `lang_english`, `lang_origin`, `key_phrase`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt`, `meaning_id`, 
+                    (
+                        select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
+                            where user_id = 1)
+                    )
+                 AS `meaning_id` FROM `usecases` AS `Usecases`; - parameters:[]
+2022-08-05 12:05:15 error: (conn=366, no: 1242, SQLState: 21000) Subquery returns more than 1 row
+sql: SELECT `usecase_id`, `lang_english`, `lang_origin`, `key_phrase`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt`, `meaning_id`, 
+                    (
+                        select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
+                            where user_id = 1)
+                    )
+                 AS `k` FROM `usecases` AS `Usecases`; - parameters:[]
+2022-08-05 12:05:18 error: (conn=366, no: 1242, SQLState: 21000) Subquery returns more than 1 row
+sql: SELECT `usecase_id`, `lang_english`, `lang_origin`, `key_phrase`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt`, `meaning_id`, 
+                    (
+                        select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
+                            where user_id = 1)
+                    )
+                 AS `k` FROM `usecases` AS `Usecases`; - parameters:[]
+2022-08-05 12:06:48 error: (conn=368, no: 1241, SQLState: 21000) Operand should contain 1 column(s)
+sql: SELECT `usecase_id`, `lang_english`, `lang_origin`, `key_phrase`, `created_at` AS `createdAt`, `updated_at` AS `updatedAt`, `meaning_id`, 
+                    (
+                        select * from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
+                            where user_id = 1)
+                    )
+                 AS `meaning_id` FROM `usecases` AS `Usecases`; - parameters:[]
+2022-08-05 12:10:17 error: Include unexpected. Element has to be either a Model, an Association or an object.
+2022-08-05 12:15:41 error: Include unexpected. Element has to be either a Model, an Association or an object.
+2022-08-05 12:15:46 error: Include unexpected. Element has to be either a Model, an Association or an object.
+2022-08-05 12:16:07 error: [{"val":"\n                    select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words\n                    where user_id = 1)\n                "}] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']
+2022-08-05 12:16:09 error: [{"val":"\n                    select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words\n                    where user_id = 1)\n                "}] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']
+2022-08-05 12:18:14 error: [{"val":"\n                    select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words\n                    where user_id = 1)\n                "}] is not a valid attribute definition. Please use the following format: ['attribute definition', 'alias']

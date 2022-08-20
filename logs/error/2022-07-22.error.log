@@ -1,0 +1,5 @@
+2022-07-22 14:36:06 error: POST /v1/oauth/google no Router there
+2022-07-22 14:47:41 error: GET /v1/oauth/google no Router there
+2022-07-22 16:02:37 error: GET /favicon.ico no Router there
+2022-07-22 16:05:56 error: GET /favicon.ico no Router there
+2022-07-22 16:20:16 error: GET /favicon.ico no Router there

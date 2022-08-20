@@ -1,0 +1,4 @@
+2022-07-30 10:45:42 error: POST /v1/oauth/google/callback no Router there
+2022-07-30 10:48:11 error: POST /v1/oauth/google/callback no Router there
+2022-07-30 10:48:34 error: GET /v1/oauth/google/callback no Router there
+2022-07-30 12:11:45 error: GET /v1/oauth/google/callback no Router there

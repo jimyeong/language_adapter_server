@@ -1,0 +1,58 @@
+2022-07-22 14:36:06 info: POST ::1 /v1/oauth/google
+2022-07-22 14:36:06 error: POST /v1/oauth/google no Router there
+2022-07-22 14:37:14 info: POST ::1 /v1/oauth/google
+2022-07-22 14:37:23 info: POST ::1 /v1/oauth/google
+2022-07-22 14:37:25 info: POST ::1 /v1/oauth/google
+2022-07-22 14:37:27 info: POST ::1 /v1/oauth/google
+2022-07-22 14:37:29 info: POST ::1 /v1/oauth/google
+2022-07-22 14:37:31 info: POST ::1 /v1/oauth/google
+2022-07-22 14:44:16 info: POST ::1 /v1/oauth/google
+2022-07-22 14:44:33 info: POST ::1 /v1/oauth/google
+2022-07-22 14:44:36 info: POST ::1 /v1/oauth/google
+2022-07-22 14:44:41 info: POST ::1 /v1/oauth/google
+2022-07-22 14:46:13 info: POST ::1 /v1/oauth/google
+2022-07-22 14:47:16 info: POST ::1 /v1/oauth/google
+2022-07-22 14:47:24 info: POST ::1 /v1/oauth/google
+2022-07-22 14:47:38 info: POST ::1 /v1/oauth/google
+2022-07-22 14:47:41 info: GET ::1 /v1/oauth/google
+2022-07-22 14:47:41 error: GET /v1/oauth/google no Router there
+2022-07-22 14:47:51 info: POST ::1 /v1/oauth/google
+2022-07-22 14:48:26 info: POST ::1 /v1/oauth/google
+2022-07-22 14:48:32 info: POST ::1 /v1/oauth/google
+2022-07-22 14:49:22 info: POST ::1 /v1/oauth/google
+2022-07-22 15:19:29 info: POST ::1 /v1/oauth/google
+2022-07-22 15:26:55 info: POST ::1 /v1/oauth/google
+2022-07-22 15:29:19 info: POST ::1 /v1/oauth/google
+2022-07-22 16:02:37 info: POST ::1 /v1/oauth/google
+2022-07-22 16:02:37 info: GET ::1 /favicon.ico
+2022-07-22 16:02:37 error: GET /favicon.ico no Router there
+2022-07-22 16:05:56 info: POST ::1 /v1/oauth/google
+2022-07-22 16:05:56 info: GET ::1 /favicon.ico
+2022-07-22 16:05:56 error: GET /favicon.ico no Router there
+2022-07-22 16:20:16 info: POST ::1 /v1/oauth/google
+2022-07-22 16:20:16 info: GET ::1 /favicon.ico
+2022-07-22 16:20:16 error: GET /favicon.ico no Router there
+2022-07-22 17:17:21 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:17:21 info: POST ::1 /v1/oauth/google
+2022-07-22 17:20:11 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:20:11 info: POST ::1 /v1/oauth/google
+2022-07-22 17:21:25 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:21:25 info: POST ::1 /v1/oauth/google
+2022-07-22 17:22:46 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:22:46 info: POST ::1 /v1/oauth/google
+2022-07-22 17:24:22 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:24:22 info: POST ::1 /v1/oauth/google
+2022-07-22 17:24:49 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:24:49 info: POST ::1 /v1/oauth/google
+2022-07-22 17:25:49 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:25:49 info: POST ::1 /v1/oauth/google
+2022-07-22 17:28:16 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:28:17 info: POST ::1 /v1/oauth/google
+2022-07-22 17:30:10 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:30:10 info: POST ::1 /v1/oauth/google
+2022-07-22 17:31:49 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:31:49 info: POST ::1 /v1/oauth/google
+2022-07-22 17:39:54 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:39:54 info: POST ::1 /v1/oauth/google
+2022-07-22 17:50:23 info: OPTIONS ::1 /v1/oauth/google
+2022-07-22 17:50:23 info: POST ::1 /v1/oauth/google

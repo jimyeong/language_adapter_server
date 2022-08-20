@@ -1,0 +1,8 @@
+2022-08-02 08:24:45 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-02 08:24:45 info: POST ::1 /v1/oauth/google/oauth
+2022-08-02 09:03:48 error: (conn=227, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `meanings`; - parameters:[]
+2022-08-02 09:17:15 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-02 09:17:15 info: POST ::1 /v1/oauth/google/oauth
+2022-08-02 09:17:47 info: POST ::1 /v1/words/add
+2022-08-02 09:19:07 info: POST ::1 /v1/words/add

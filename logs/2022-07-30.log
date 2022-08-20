@@ -1,0 +1,39 @@
+2022-07-30 10:24:37 info: OPTIONS ::1 /v1/oauth/google
+2022-07-30 10:24:37 info: POST ::1 /v1/oauth/google
+2022-07-30 10:42:31 info: OPTIONS ::1 /v1/oauth/google
+2022-07-30 10:42:31 info: POST ::1 /v1/oauth/google
+2022-07-30 10:45:42 info: OPTIONS ::1 /v1/oauth/google/callback
+2022-07-30 10:45:42 info: POST ::1 /v1/oauth/google/callback
+2022-07-30 10:45:42 error: POST /v1/oauth/google/callback no Router there
+2022-07-30 10:48:11 info: OPTIONS ::1 /v1/oauth/google/callback
+2022-07-30 10:48:11 info: POST ::1 /v1/oauth/google/callback
+2022-07-30 10:48:11 error: POST /v1/oauth/google/callback no Router there
+2022-07-30 10:48:34 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 10:48:34 error: GET /v1/oauth/google/callback no Router there
+2022-07-30 11:43:08 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:43:49 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:45:18 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:47:49 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:48:49 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:50:11 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 11:51:49 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 12:11:45 info: GET ::1 /v1/oauth/google/callback
+2022-07-30 12:11:45 error: GET /v1/oauth/google/callback no Router there
+2022-07-30 12:11:56 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:11:59 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:12:25 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:12:25 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:40:44 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:40:44 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:42:34 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:42:34 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:43:28 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:43:28 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:44:59 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:44:59 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:45:33 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:45:33 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:46:26 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:46:26 info: POST ::1 /v1/oauth/google/oauth
+2022-07-30 12:46:59 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-07-30 12:46:59 info: POST ::1 /v1/oauth/google/oauth

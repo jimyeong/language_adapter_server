@@ -1,0 +1,326 @@
+2022-08-20 01:12:17 info: OPTIONS ::1 /v1/words
+2022-08-20 01:12:17 info: POST ::1 /v1/words
+2022-08-20 01:12:17 error: session invalid
+2022-08-20 01:12:29 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 01:12:29 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 01:12:33 info: OPTIONS ::1 /v1/words
+2022-08-20 01:12:33 info: POST ::1 /v1/words
+2022-08-20 01:12:34 info: OPTIONS ::1 /v1/quiz
+2022-08-20 01:12:35 info: POST ::1 /v1/quiz
+2022-08-20 01:12:35 info: POST ::1 /v1/words
+2022-08-20 01:12:36 info: POST ::1 /v1/quiz
+2022-08-20 01:12:36 info: POST ::1 /v1/words
+2022-08-20 01:12:38 info: POST ::1 /v1/quiz
+2022-08-20 01:12:38 info: OPTIONS ::1 /v1/words
+2022-08-20 01:12:38 info: POST ::1 /v1/words
+2022-08-20 01:12:39 info: POST ::1 /v1/quiz
+2022-08-20 01:12:45 info: OPTIONS ::1 /v1/words
+2022-08-20 01:12:45 info: POST ::1 /v1/words
+2022-08-20 01:12:46 info: OPTIONS ::1 /v1/quiz
+2022-08-20 01:12:46 info: POST ::1 /v1/quiz
+2022-08-20 01:12:46 info: POST ::1 /v1/words
+2022-08-20 12:36:10 info: OPTIONS ::1 /v1/words
+2022-08-20 12:36:11 info: POST ::1 /v1/words
+2022-08-20 12:36:11 error: session invalid
+2022-08-20 12:36:59 info: OPTIONS ::1 /v1/words
+2022-08-20 12:36:59 info: POST ::1 /v1/words
+2022-08-20 12:36:59 error: session invalid
+2022-08-20 12:37:06 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 12:37:06 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 12:37:10 info: OPTIONS ::1 /v1/words
+2022-08-20 12:37:10 info: POST ::1 /v1/words
+2022-08-20 12:57:24 info: OPTIONS ::1 /v1/words
+2022-08-20 12:57:24 info: POST ::1 /v1/words
+2022-08-20 12:57:24 error: session invalid
+2022-08-20 13:01:19 info: OPTIONS ::1 /v1/words
+2022-08-20 13:01:19 info: POST ::1 /v1/words
+2022-08-20 13:01:19 error: session invalid
+2022-08-20 13:01:39 info: OPTIONS ::1 /v1/words
+2022-08-20 13:01:39 info: POST ::1 /v1/words
+2022-08-20 13:01:39 error: session invalid
+2022-08-20 13:04:56 info: OPTIONS ::1 /v1/words
+2022-08-20 13:04:56 info: POST ::1 /v1/words
+2022-08-20 13:04:56 error: session invalid
+2022-08-20 13:06:57 info: OPTIONS ::1 /v1/words
+2022-08-20 13:06:57 info: POST ::1 /v1/words
+2022-08-20 13:06:57 error: session expired
+2022-08-20 13:08:45 info: OPTIONS ::1 /v1/words
+2022-08-20 13:08:45 info: POST ::1 /v1/words
+2022-08-20 13:08:45 error: session expired
+2022-08-20 13:09:41 info: OPTIONS ::1 /v1/words
+2022-08-20 13:09:41 info: POST ::1 /v1/words
+2022-08-20 13:09:41 error: session expired
+2022-08-20 13:10:03 info: OPTIONS ::1 /v1/words
+2022-08-20 13:10:03 info: POST ::1 /v1/words
+2022-08-20 13:10:03 error: session expired
+2022-08-20 13:10:07 info: POST ::1 /v1/words
+2022-08-20 13:10:07 error: session expired
+2022-08-20 13:11:12 info: OPTIONS ::1 /v1/words
+2022-08-20 13:11:13 info: POST ::1 /v1/words
+2022-08-20 13:11:13 error: session expired
+2022-08-20 13:13:53 info: OPTIONS ::1 /v1/words
+2022-08-20 13:13:53 info: POST ::1 /v1/words
+2022-08-20 13:13:53 error: session expired
+2022-08-20 13:15:46 info: OPTIONS ::1 /v1/words
+2022-08-20 13:15:46 info: POST ::1 /v1/words
+2022-08-20 13:15:46 error: session expired
+2022-08-20 13:17:14 info: OPTIONS ::1 /v1/words
+2022-08-20 13:17:14 info: POST ::1 /v1/words
+2022-08-20 13:17:14 error: session expired
+2022-08-20 13:18:42 info: OPTIONS ::1 /v1/words
+2022-08-20 13:18:42 info: POST ::1 /v1/words
+2022-08-20 13:18:42 error: session expired
+2022-08-20 13:18:52 info: OPTIONS ::1 /v1/words
+2022-08-20 13:18:52 info: POST ::1 /v1/words
+2022-08-20 13:18:52 error: session expired
+2022-08-20 13:19:01 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 13:19:01 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 13:20:43 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 13:20:43 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 13:20:44 info: OPTIONS ::1 /v1/words
+2022-08-20 13:20:44 info: POST ::1 /v1/words
+2022-08-20 13:21:36 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 13:21:36 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 13:21:37 info: OPTIONS ::1 /v1/words
+2022-08-20 13:21:37 info: POST ::1 /v1/words
+2022-08-20 13:24:23 info: OPTIONS ::1 /v1/words
+2022-08-20 13:24:23 info: POST ::1 /v1/words
+2022-08-20 13:24:29 info: OPTIONS ::1 /v1/words
+2022-08-20 13:24:29 info: POST ::1 /v1/words
+2022-08-20 13:27:18 info: OPTIONS ::1 /v1/words
+2022-08-20 13:27:18 info: POST ::1 /v1/words
+2022-08-20 13:28:24 info: OPTIONS ::1 /v1/words
+2022-08-20 13:28:24 info: POST ::1 /v1/words
+2022-08-20 13:28:30 info: OPTIONS ::1 /v1/words
+2022-08-20 13:28:30 info: POST ::1 /v1/words
+2022-08-20 13:29:29 info: OPTIONS ::1 /v1/words
+2022-08-20 13:29:29 info: POST ::1 /v1/words
+2022-08-20 13:29:33 info: POST ::1 /v1/words
+2022-08-20 13:30:25 info: OPTIONS ::1 /v1/words
+2022-08-20 13:30:25 info: POST ::1 /v1/words
+2022-08-20 13:30:37 info: OPTIONS ::1 /v1/words
+2022-08-20 13:30:37 info: POST ::1 /v1/words
+2022-08-20 13:31:01 info: OPTIONS ::1 /v1/words
+2022-08-20 13:31:01 info: POST ::1 /v1/words
+2022-08-20 13:31:04 info: POST ::1 /v1/words
+2022-08-20 13:31:19 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 13:31:19 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 13:31:19 info: OPTIONS ::1 /v1/words
+2022-08-20 13:31:19 info: POST ::1 /v1/words
+2022-08-20 13:31:23 info: POST ::1 /v1/words
+2022-08-20 13:32:50 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:32:50 info: POST ::1 /v1/quiz
+2022-08-20 13:32:52 info: OPTIONS ::1 /v1/words
+2022-08-20 13:32:52 info: POST ::1 /v1/words
+2022-08-20 13:33:10 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:33:10 info: POST ::1 /v1/quiz
+2022-08-20 13:33:11 info: OPTIONS ::1 /v1/words
+2022-08-20 13:33:11 info: POST ::1 /v1/words
+2022-08-20 13:33:14 info: POST ::1 /v1/words
+2022-08-20 13:33:38 info: OPTIONS ::1 /v1/words
+2022-08-20 13:33:38 info: POST ::1 /v1/words
+2022-08-20 13:33:38 error: session expired
+2022-08-20 13:33:42 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 13:33:42 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 13:33:42 info: POST ::1 /v1/words
+2022-08-20 13:36:03 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:36:03 info: POST ::1 /v1/quiz
+2022-08-20 13:36:04 info: OPTIONS ::1 /v1/words
+2022-08-20 13:36:04 info: POST ::1 /v1/words
+2022-08-20 13:36:29 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:36:29 info: POST ::1 /v1/quiz
+2022-08-20 13:39:04 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:39:04 info: POST ::1 /v1/quiz
+2022-08-20 13:39:22 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:39:22 info: POST ::1 /v1/quiz
+2022-08-20 13:39:37 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:39:37 info: POST ::1 /v1/quiz
+2022-08-20 13:40:58 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:40:58 info: GET ::1 /v1/quiz
+2022-08-20 13:40:58 error: GET /v1/quiz no Router there
+2022-08-20 13:40:58 error: [object Object]
+2022-08-20 13:40:58 info: POST ::1 /v1/quiz
+2022-08-20 13:41:02 info: POST ::1 /v1/quiz
+2022-08-20 13:41:02 info: GET ::1 /v1/quiz
+2022-08-20 13:41:02 error: GET /v1/quiz no Router there
+2022-08-20 13:41:02 error: [object Object]
+2022-08-20 13:41:19 info: GET ::1 /v1/quiz
+2022-08-20 13:41:19 error: GET /v1/quiz no Router there
+2022-08-20 13:41:19 error: [object Object]
+2022-08-20 13:42:29 info: GET ::1 /v1/quiz
+2022-08-20 13:42:29 error: GET /v1/quiz no Router there
+2022-08-20 13:42:29 error: [object Object]
+2022-08-20 13:42:33 info: GET ::1 /v1/quiz
+2022-08-20 13:42:33 error: GET /v1/quiz no Router there
+2022-08-20 13:42:33 error: [object Object]
+2022-08-20 13:42:53 info: GET ::1 /v1/quiz
+2022-08-20 13:42:53 error: GET /v1/quiz no Router there
+2022-08-20 13:42:53 error: [object Object]
+2022-08-20 13:43:02 info: GET ::1 /v1/quiz
+2022-08-20 13:43:02 error: GET /v1/quiz no Router there
+2022-08-20 13:43:02 error: [object Object]
+2022-08-20 13:43:20 info: GET ::1 /v1/quiz
+2022-08-20 13:43:20 error: GET /v1/quiz no Router there
+2022-08-20 13:43:20 error: [object Object]
+2022-08-20 13:43:25 info: GET ::1 /v1/quiz
+2022-08-20 13:43:25 error: GET /v1/quiz no Router there
+2022-08-20 13:43:25 error: [object Object]
+2022-08-20 13:43:27 info: OPTIONS ::1 /v1/words
+2022-08-20 13:43:27 info: POST ::1 /v1/words
+2022-08-20 13:43:28 info: GET ::1 /v1/quiz
+2022-08-20 13:43:28 error: GET /v1/quiz no Router there
+2022-08-20 13:43:28 error: [object Object]
+2022-08-20 13:43:29 info: POST ::1 /v1/words
+2022-08-20 13:43:30 info: GET ::1 /v1/quiz
+2022-08-20 13:43:30 error: GET /v1/quiz no Router there
+2022-08-20 13:43:30 error: [object Object]
+2022-08-20 13:43:31 info: POST ::1 /v1/words
+2022-08-20 13:43:31 info: GET ::1 /v1/quiz
+2022-08-20 13:43:31 error: GET /v1/quiz no Router there
+2022-08-20 13:43:31 error: [object Object]
+2022-08-20 13:43:32 info: POST ::1 /v1/words
+2022-08-20 13:43:33 info: GET ::1 /v1/quiz
+2022-08-20 13:43:33 error: GET /v1/quiz no Router there
+2022-08-20 13:43:33 error: [object Object]
+2022-08-20 13:45:33 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:45:33 info: POST ::1 /v1/quiz
+2022-08-20 13:45:35 info: POST ::1 /v1/quiz
+2022-08-20 13:45:37 info: POST ::1 /v1/quiz
+2022-08-20 13:45:38 info: OPTIONS ::1 /v1/words
+2022-08-20 13:45:38 info: POST ::1 /v1/words
+2022-08-20 13:45:39 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:45:39 info: POST ::1 /v1/quiz
+2022-08-20 13:45:40 info: POST ::1 /v1/words
+2022-08-20 13:45:40 info: POST ::1 /v1/quiz
+2022-08-20 13:45:41 info: POST ::1 /v1/words
+2022-08-20 13:45:42 info: POST ::1 /v1/quiz
+2022-08-20 13:46:07 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:46:07 info: POST ::1 /v1/quiz
+2022-08-20 13:46:20 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:46:20 info: POST ::1 /v1/quiz
+2022-08-20 13:46:34 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:46:34 info: POST ::1 /v1/quiz
+2022-08-20 13:49:53 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:49:53 info: POST ::1 /v1/quiz
+2022-08-20 13:49:55 info: POST ::1 /v1/quiz
+2022-08-20 13:49:56 info: POST ::1 /v1/quiz
+2022-08-20 13:49:56 info: POST ::1 /v1/quiz
+2022-08-20 13:49:57 info: POST ::1 /v1/quiz
+2022-08-20 13:49:58 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:49:58 info: POST ::1 /v1/quiz
+2022-08-20 13:49:59 info: POST ::1 /v1/quiz
+2022-08-20 13:50:00 info: POST ::1 /v1/quiz
+2022-08-20 13:50:02 info: POST ::1 /v1/quiz
+2022-08-20 13:50:08 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:50:08 info: POST ::1 /v1/quiz
+2022-08-20 13:50:08 info: POST ::1 /v1/quiz
+2022-08-20 13:50:09 info: OPTIONS ::1 /v1/words
+2022-08-20 13:50:09 info: POST ::1 /v1/words
+2022-08-20 13:50:10 info: POST ::1 /v1/quiz
+2022-08-20 13:50:10 info: POST ::1 /v1/words
+2022-08-20 13:50:11 info: POST ::1 /v1/quiz
+2022-08-20 13:50:12 info: POST ::1 /v1/words
+2022-08-20 13:50:13 info: POST ::1 /v1/quiz
+2022-08-20 13:50:13 info: POST ::1 /v1/words
+2022-08-20 13:50:14 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:50:14 info: POST ::1 /v1/quiz
+2022-08-20 13:50:17 info: OPTIONS ::1 /v1/words
+2022-08-20 13:50:17 info: POST ::1 /v1/words
+2022-08-20 13:50:22 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:50:22 info: POST ::1 /v1/quiz
+2022-08-20 13:51:18 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:51:18 info: POST ::1 /v1/quiz
+2022-08-20 13:51:21 info: OPTIONS ::1 /v1/words
+2022-08-20 13:51:21 info: POST ::1 /v1/words
+2022-08-20 13:51:22 info: POST ::1 /v1/quiz
+2022-08-20 13:51:22 info: POST ::1 /v1/words
+2022-08-20 13:51:23 info: POST ::1 /v1/quiz
+2022-08-20 13:51:23 info: POST ::1 /v1/words
+2022-08-20 13:51:24 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:51:24 info: POST ::1 /v1/quiz
+2022-08-20 13:51:25 info: POST ::1 /v1/words
+2022-08-20 13:51:25 info: POST ::1 /v1/quiz
+2022-08-20 13:51:26 info: POST ::1 /v1/words
+2022-08-20 13:51:26 info: POST ::1 /v1/quiz
+2022-08-20 13:51:28 info: OPTIONS ::1 /v1/words
+2022-08-20 13:51:28 info: POST ::1 /v1/words
+2022-08-20 13:51:28 info: POST ::1 /v1/quiz
+2022-08-20 13:51:29 info: POST ::1 /v1/words
+2022-08-20 13:51:29 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:51:29 info: POST ::1 /v1/quiz
+2022-08-20 13:51:30 info: POST ::1 /v1/words
+2022-08-20 13:51:30 info: POST ::1 /v1/quiz
+2022-08-20 13:51:53 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:51:53 info: POST ::1 /v1/quiz
+2022-08-20 13:51:53 info: POST ::1 /v1/quiz
+2022-08-20 13:51:54 info: POST ::1 /v1/quiz
+2022-08-20 13:51:55 info: POST ::1 /v1/quiz
+2022-08-20 13:51:56 info: POST ::1 /v1/quiz
+2022-08-20 13:51:58 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:51:59 info: POST ::1 /v1/quiz
+2022-08-20 13:51:59 info: POST ::1 /v1/quiz
+2022-08-20 13:52:00 info: OPTIONS ::1 /v1/words
+2022-08-20 13:52:00 info: POST ::1 /v1/words
+2022-08-20 13:52:01 info: POST ::1 /v1/quiz
+2022-08-20 13:52:48 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:52:48 info: POST ::1 /v1/quiz
+2022-08-20 13:52:49 info: POST ::1 /v1/quiz
+2022-08-20 13:52:50 info: OPTIONS ::1 /v1/words
+2022-08-20 13:52:50 info: POST ::1 /v1/words
+2022-08-20 13:52:51 info: POST ::1 /v1/quiz
+2022-08-20 13:52:51 info: POST ::1 /v1/words
+2022-08-20 13:52:52 info: POST ::1 /v1/quiz
+2022-08-20 13:52:53 info: POST ::1 /v1/words
+2022-08-20 13:52:54 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:52:54 info: POST ::1 /v1/quiz
+2022-08-20 13:52:54 info: POST ::1 /v1/words
+2022-08-20 13:52:55 info: POST ::1 /v1/quiz
+2022-08-20 13:52:55 info: OPTIONS ::1 /v1/words
+2022-08-20 13:52:55 info: POST ::1 /v1/words
+2022-08-20 13:52:56 info: POST ::1 /v1/quiz
+2022-08-20 13:52:59 info: POST ::1 /v1/words
+2022-08-20 13:53:00 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:53:00 info: POST ::1 /v1/quiz
+2022-08-20 13:53:26 info: OPTIONS ::1 /v1/words
+2022-08-20 13:53:26 info: POST ::1 /v1/words
+2022-08-20 13:55:18 info: OPTIONS ::1 /v1/words
+2022-08-20 13:55:18 info: POST ::1 /v1/words
+2022-08-20 13:55:28 info: OPTIONS ::1 /v1/quiz
+2022-08-20 13:55:28 info: POST ::1 /v1/quiz
+2022-08-20 13:56:04 info: OPTIONS ::1 /v1/words
+2022-08-20 13:56:04 info: POST ::1 /v1/words
+2022-08-20 13:57:20 info: OPTIONS ::1 /v1/words
+2022-08-20 13:57:20 info: POST ::1 /v1/words
+2022-08-20 13:57:22 info: POST ::1 /v1/words
+2022-08-20 14:19:15 info: OPTIONS ::1 /v1/words
+2022-08-20 14:19:15 info: POST ::1 /v1/words
+2022-08-20 14:19:15 error: session expired
+2022-08-20 14:20:49 info: OPTIONS ::1 /v1/words
+2022-08-20 14:20:49 info: POST ::1 /v1/words
+2022-08-20 14:20:49 error: session expired
+2022-08-20 14:21:14 info: OPTIONS ::1 /v1/words
+2022-08-20 14:21:14 info: POST ::1 /v1/words
+2022-08-20 14:21:14 error: session expired
+2022-08-20 14:21:19 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 14:21:19 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 14:21:19 info: POST ::1 /v1/words
+2022-08-20 14:23:25 info: OPTIONS ::1 /v1/words
+2022-08-20 14:23:25 info: POST ::1 /v1/words
+2022-08-20 14:23:36 info: OPTIONS ::1 /v1/words
+2022-08-20 14:23:36 info: POST ::1 /v1/words
+2022-08-20 14:23:38 info: POST ::1 /v1/words
+2022-08-20 14:24:35 info: OPTIONS ::1 /v1/quiz
+2022-08-20 14:24:35 info: POST ::1 /v1/quiz
+2022-08-20 14:24:41 info: OPTIONS ::1 /v1/words
+2022-08-20 14:24:41 info: POST ::1 /v1/words
+2022-08-20 14:25:08 info: OPTIONS ::1 /v1/words
+2022-08-20 14:25:08 info: POST ::1 /v1/words
+2022-08-20 14:28:01 info: OPTIONS ::1 /v1/quiz
+2022-08-20 14:28:02 info: POST ::1 /v1/quiz
+2022-08-20 14:28:02 info: OPTIONS ::1 /v1/words
+2022-08-20 14:28:02 info: POST ::1 /v1/words
+2022-08-20 14:28:02 error: session expired
+2022-08-20 14:28:14 info: OPTIONS ::1 /v1/oauth/google/oauth
+2022-08-20 14:28:14 info: POST ::1 /v1/oauth/google/oauth
+2022-08-20 14:28:14 info: OPTIONS ::1 /v1/words
+2022-08-20 14:28:14 info: POST ::1 /v1/words

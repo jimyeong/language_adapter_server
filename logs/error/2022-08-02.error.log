@@ -1,0 +1,2 @@
+2022-08-02 09:03:48 error: (conn=227, no: 1451, SQLState: 23000) Cannot delete or update a parent row: a foreign key constraint fails
+sql: DROP TABLE IF EXISTS `meanings`; - parameters:[]
