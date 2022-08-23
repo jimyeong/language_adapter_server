@@ -7,13 +7,14 @@ const { Op } = Sequelize;
 // const Quizes = require("../models/quizes");
 const Usecases = require("../models/usecases");
 const db = require("../models");
+const { checkSessionExist } = require("../middlewares/authenticate");
 
 const logger = require("../logger/logger");
 
 const { sequelize } = db;
 const { dateFormatter } = helper;
 
-router.post("/", (req, res, next) => {
+router.post("/", checkSessionExist, (req, res, next) => {
   const onSuccess = (words) => {
     return res.json(words);
   };

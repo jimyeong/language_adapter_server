@@ -32,13 +32,13 @@ app.use(
   session({
     store: new FileStore(fileStoreOption),
     secret: cookieKey,
-    resave: true,
-    saveUninitialized: true,
+    resave: false,
+    saveUninitialized: false,
     cookie: {
       secure: process.env.NODE_ENV === "production" || false, // if it's true, cookie will be sent over only https
       sameSite: true,
       httpOnly: true,
-      maxAge: 10000 * 60 * 60,
+      maxAge: 1000 * 60,
     },
   })
 );

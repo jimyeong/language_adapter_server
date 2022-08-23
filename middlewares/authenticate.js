@@ -30,8 +30,6 @@ const authenticator = {
       console.log("googleCred@@@", userId);
       req.session.userId = payload.email;
       req.user = { ...payload };
-      // 세션 저장
-      req.session.userId = payload.email;
 
       return next();
     } catch (error) {
