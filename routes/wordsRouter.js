@@ -49,7 +49,12 @@ router.post("/", checkSessionExist, async (req, res, next) => {
           {
             model: Usecases,
             as: "usecases",
-            attributes: ["lang_english", "lang_origin", "key_phrase"],
+            attributes: [
+              "lang_english",
+              "lang_origin",
+              "key_phrase",
+              "image_url",
+            ],
           },
           {
             model: Tags,
@@ -82,7 +87,18 @@ router.post("/add", async (req, res, next) => {
   const newMeaning = {};
   const newSynonyms = {};
   const newTags = {};
-  newEnglishWord.user_id = req.body.userId;
+  // const user = await Users.findOne({
+  //   where: {
+  //     email: req.session.userId,
+  //   },
+  // });
+  const user = await Users.findOne({
+    where: {
+      email: req.body.userId,
+    },
+  });
+
+  newEnglishWord.user_id = user.dataValues.id;
   newEnglishWord.english_word = req.body.english_word;
   const englishword = await EnglishWords.create(newEnglishWord);
   console.log("englishWord", englishword);
@@ -111,6 +127,7 @@ router.post("/add", async (req, res, next) => {
       usecases.lang_english = u.lang_english;
       usecases.lang_origin = u.lang_origin;
       usecases.key_phrase = u.key_phrase;
+      usecases.image_url = u.image_url;
       usecases.meaning_id = _meanings[i].dataValues.meaning_id;
       usecase_arr.push(usecases);
     }

@@ -38,7 +38,7 @@ app.use(
       secure: process.env.NODE_ENV === "production" || false, // if it's true, cookie will be sent over only https
       sameSite: true,
       httpOnly: true,
-      maxAge: 1000 * 60,
+      maxAge: 1000 * 60 * 60 * 2,
     },
   })
 );

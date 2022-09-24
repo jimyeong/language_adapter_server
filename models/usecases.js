@@ -19,6 +19,10 @@ module.exports = class Usecases extends Sequelize.Model {
           type: Sequelize.STRING(100),
           allowNull: false,
         },
+        image_url: {
+          type: Sequelize.STRING(255),
+          allowNull: false,
+        },
       },
       {
         sequelize,
