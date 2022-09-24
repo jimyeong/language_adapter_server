@@ -79,7 +79,7 @@ router.post("/", checkSessionExist, async (req, res, next) => {
     .catch(onError);
 });
 
-router.post("/add", async (req, res, next) => {
+router.post("/add", checkSessionExist, async (req, res, next) => {
   const newEnglishWord = {};
   const newHints = {};
   const newUseCases = {};
@@ -87,16 +87,18 @@ router.post("/add", async (req, res, next) => {
   const newMeaning = {};
   const newSynonyms = {};
   const newTags = {};
-  // const user = await Users.findOne({
-  //   where: {
-  //     email: req.session.userId,
-  //   },
-  // });
+  console.log("@@@@req.session", req.session);
+
   const user = await Users.findOne({
     where: {
-      email: req.body.userId,
+      email: req.session.userId,
     },
   });
+  // const user = await Users.findOne({
+  //   where: {
+  //     email: req.body.userId,
+  //   },
+  // });
 
   newEnglishWord.user_id = user.dataValues.id;
   newEnglishWord.english_word = req.body.english_word;
@@ -105,6 +107,7 @@ router.post("/add", async (req, res, next) => {
 
   // newMeaning.usecase = req.body.usecase;
   const meaningsData = req.body.meanings.map((meaning) => {
+    console.log("@@@@MEANING", meaning);
     const _meanings = {};
     _meanings.explanation_en = meaning.explanation_en;
     _meanings.explanation_mt = meaning.explanation_mt;
@@ -139,7 +142,7 @@ router.post("/add", async (req, res, next) => {
   for (let i = 0; i < _meanings.length; i++) {
     for (let j = 0; j < req.body.meanings[i].synonyms.length; j++) {
       const synonyms = {};
-      synonyms.synonym = req.body.meanings[i].synonyms[j];
+      synonyms.synonym = req.body.meanings[i].synonyms[j].text;
       synonyms.meaning_id = _meanings[i].dataValues.meaning_id;
       synonyms_arr.push(synonyms);
     }
@@ -151,7 +154,7 @@ router.post("/add", async (req, res, next) => {
   for (let i = 0; i < _meanings.length; i++) {
     for (let j = 0; j < req.body.meanings[i].tags.length; j++) {
       const tags = {};
-      tags.tag_content = `#${req.body.meanings[i].tags[j]}`;
+      tags.tag_content = `#${req.body.meanings[i].tags[j].text}`;
       tags.meaning_id = _meanings[i].dataValues.meaning_id;
       tags_arr.push(tags);
     }
@@ -163,7 +166,7 @@ router.post("/add", async (req, res, next) => {
   for (let i = 0; i < _meanings.length; i++) {
     for (let j = 0; j < req.body.meanings[i].meaningMemos.length; j++) {
       const memos = {};
-      memos.memo_content = req.body.meanings[i].meaningMemos[j];
+      memos.memo_content = req.body.meanings[i].meaningMemos[j].text;
       memos.meaning_id = _meanings[i].dataValues.meaning_id;
       memos_arr.push(memos);
     }
