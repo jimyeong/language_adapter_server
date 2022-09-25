@@ -109,11 +109,12 @@ router.post("/add", checkSessionExist, async (req, res, next) => {
   const meaningsData = req.body.meanings.map((meaning) => {
     console.log("@@@@MEANING", meaning);
     const _meanings = {};
-    _meanings.explanation_en = meaning.explanation_en;
-    _meanings.explanation_mt = meaning.explanation_mt;
-    _meanings.english_word_id = englishword.dataValues.english_word_id;
+    if (meaning) {
+      _meanings.explanation_en = meaning.explanation_en;
+      _meanings.explanation_mt = meaning.explanation_mt;
+      _meanings.english_word_id = englishword.dataValues.english_word_id;
+    }
 
-    if (meaning.meaning_image) _meanings.meaning_image = meaning.meaning_image;
     return _meanings;
   });
   const _meanings = await Meanings.bulkCreate(meaningsData);
