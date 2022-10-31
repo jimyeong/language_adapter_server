@@ -31,7 +31,6 @@ router.post("/", checkSessionExist, async (req, res, next) => {
       email: req.session.userId,
     },
   });
-  console.log(["@@@W!@@@@@@@@@"], user);
 
   EnglishWords.findAll({
     where: { user_id: user.dataValues.id },
@@ -101,7 +100,9 @@ router.post("/add", checkSessionExist, async (req, res, next) => {
   // });
 
   newEnglishWord.user_id = user.dataValues.id;
+  req.body.english_word == "" && next(new Error("this field can't be void"));
   newEnglishWord.english_word = req.body.english_word;
+
   const englishword = await EnglishWords.create(newEnglishWord);
   console.log("englishWord", englishword);
 
@@ -125,15 +126,20 @@ router.post("/add", checkSessionExist, async (req, res, next) => {
   // usecase data input
   const usecase_arr = [];
   for (let i = 0; i < _meanings.length; i++) {
-    for (let j = 0; j < req.body.meanings[i].usecases.length; j++) {
-      const usecases = {};
-      const u = req.body.meanings[i].usecases[j];
-      usecases.lang_english = u.lang_english;
-      usecases.lang_origin = u.lang_origin;
-      usecases.key_phrase = u.key_phrase;
-      usecases.image_url = u.image_url;
-      usecases.meaning_id = _meanings[i].dataValues.meaning_id;
-      usecase_arr.push(usecases);
+    console.log("@@@@", req.body.meanings);
+    // 방어코드 지울것, 클라이언트 쪽 수정한 후에
+
+    if (req.body.meanings[i]) {
+      for (let j = 0; j < req.body.meanings[i].usecases.length; j++) {
+        const usecases = {};
+        const u = req.body.meanings[i].usecases[j];
+        usecases.lang_english = u.lang_english;
+        usecases.lang_origin = u.lang_origin;
+        usecases.key_phrase = u.key_phrase;
+        usecases.image_url = u.image_url;
+        usecases.meaning_id = _meanings[i].dataValues.meaning_id;
+        usecase_arr.push(usecases);
+      }
     }
   }
   const _usecases = await Usecases.bulkCreate(usecase_arr);
@@ -141,11 +147,14 @@ router.post("/add", checkSessionExist, async (req, res, next) => {
   // 동의어 추가
   const synonyms_arr = [];
   for (let i = 0; i < _meanings.length; i++) {
-    for (let j = 0; j < req.body.meanings[i].synonyms.length; j++) {
-      const synonyms = {};
-      synonyms.synonym = req.body.meanings[i].synonyms[j].text;
-      synonyms.meaning_id = _meanings[i].dataValues.meaning_id;
-      synonyms_arr.push(synonyms);
+    if (req.body.meanings[i]) {
+      console.log("@@@@@", req.body.meanings[i]);
+      for (let j = 0; j < req.body.meanings[i].synonyms.length; j++) {
+        const synonyms = {};
+        synonyms.synonym = req.body.meanings[i].synonyms[j].text;
+        synonyms.meaning_id = _meanings[i].dataValues.meaning_id;
+        synonyms_arr.push(synonyms);
+      }
     }
   }
   const _synonyms = await Synonyms.bulkCreate(synonyms_arr);
