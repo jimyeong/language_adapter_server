@@ -1,105 +1,149 @@
-```
-    static associate(db) {
-        db.Dictionary.hasMany(db.Hints, {
-            foreignKey: "fk_dictionary_hint_id",
-            as: "hints", // join 시 여기 있는 이름으로 파라미터에 담을 수 있다.
-            onDelete: "cascade",
-        })
-        db.Dictionary.belongsTo(db.User, {
-            foreignKey: "userId",
-            as: "dictionaries",
-            onDelete: "cascade",
-        });
-    }
+# Language Adaptor
 
-    SynonymsManager
-    매니저에 Synonyms의 id를 외래키로 넣는다.
+**Language Adaptor** is an experimental English learning tool built around the idea that  
+**language is better learned and recalled through images, not definitions**.
+
+Rather than memorizing words as text, the project focuses on understanding how words *feel*, *look*, and *are used in real contexts*.
+
+---
+
+## 🎯 Purpose
+
+- Learn vocabulary through **visual association rather than textual definitions**
+- Treat words as experiences and contexts, not isolated strings
+- Support more natural language recall by anchoring expressions to images and usage
+
+---
+
+## ✨ Key Features
+
+- **Giphy Integration**
+  - Displays GIFs related to searched words or expressions
+  - Helps learners grasp tone, emotion, and real-world usage visually
+
+- **Word & Expression Storage**
+  Each saved entry can include:
+  - Example sentences
+  - Associated Giphy GIFs
+  - Synonyms and antonyms
+  - Stored together as a single learning unit
+  - Quiz mode
+
+- **Learning Calendar**
+  - Days with saved entries are marked on a calendar
+  - Clicking a date shows all words and expressions studied on that day
+  - Enables reflection on learning history over time
+ <table>
+  <tr>
+    <td width="50%">
+      <b>1. Associated Giphy GIFs</b><br/>
+      Relate your words with funny moving images
+      <br/><br/>
+      <img src="https://github.com/user-attachments/assets/8eb5b617-5434-41f3-bc59-d997c1272bdc" width="100%"/>
+    </td>
+    <td width="50%">
+      <b>2. Synonyms and antonyms</b><br/>
+      Compare your new words for better sensing
+      <br/><br/>
+      <img src="https://github.com/user-attachments/assets/91e8f37d-373b-4e51-8ee9-9516db59d1bf" width="100%"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <b>3. Stored together as a single learning unit</b><br/>
+      Update your learning journey in the calander so you can take them out whenever
+      <br/><br/>
+      <img src="https://github.com/user-attachments/assets/dda90909-d1c5-468b-85bb-d927c903bf3a" width="100%"/>
+    </td>
+    <td width="50%">
+      <b>4. Quiz Mode</b><br/>
+      Guess the answer with the given pictues
+      <br/><br/>
+      <img src="https://github.com/user-attachments/assets/2d3c5314-0503-4372-b7d9-3c692cb8262c" width="100%"/>
+    </td>
+  </tr>
+</table>
 
 
-    // hasMany 1:M 관계 1st param 은 target인데 hasMany는 타겟 테이블에 외래키가 정의됨
-```
 
-```
 
-      {
-        model: Usecases,
-        as: "usecases",
-        attributes: ["lang_english", "lang_origin", "key_phrase"],
-      },
-      {
-        model: Tags,
-        as: "tags",
-        attributes: ["tag_content"],
-      },
-      {
-        model: Synonyms,
-        as: "synonyms",
-        attributes: ["synonym"],
-      },
-      {
-        model: MeaningMemos,
-        as: "meanigMemos",
-        attributes: ["memo_content"],
-      },
-```
 
-```
-select * from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
-where user_id = 1);
 
-// usecases 만 뽑아오는 쿼리
-select * from usecases
-where meaning_id in (select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
-where user_id = 1));
 
-```
+---
 
-```
-sub쿼리를 이용하는 방법
-Usecases.findAll({
-    attributes: {
-      where: {
-        meaning_id: {
-          [Op.or]: [
-            sequelize.literal(`
-                    (
-                        select meaning_id from meanings where english_word_id in (SELECT english_word_id FROM language_adapter.english_words
-                        where user_id = 1)
-                    )
-                `),
-          ],
-        },
-      },
-    },
-  })
-```
+## 🧱 Initial Technical Design
 
-02.08.22 데이터 모델 수정, 및 데이터 들어가는 지 확인, 03일(내일) 포스트맨을 이용한 데이터 삽입작업, 및 에러처리 할 것
+- Frontend: Web-based UI
+- Backend: REST API
+- Database: **MySQL (RDBMS)**
 
-03.08.22 서버쪽 데이터베이스에 데이터 삽입 완료, 에러처리를 아직 안함 04일(내일) 클라이언트쪽 데이터 받아서 보여주기, 서버 수정 및 삭제 예외처리 프로세스 추가
+Words, examples, images, and relationships were modeled using a relational database structure.
 
-04.08.22 클라이이언트쪽 달력부분 보여주고 있음, 내일은 퀴즈쪽 작업할 것, 데이터 수정, 삭제, 이미지 등록 프로세스 추가,
-jest 공부할것
+---
 
-05.08.22 집을 옮기느라 작업을 많이 못했음, 그런데, 퀴즈까지는 했음, 06일(내일) 이미지등록프로세스 추가, 데이터수정,삭제, 복습 소팅 작업 추가 할 것, 동의어같은 것들 추가가 안되었다면, 빈배열로 넘기도록 처리한다.
+## ⛔ Why the Project Was Paused
 
-06.08.22 삭제프로세스 작업중, 삭제프로세스를
-07.08.22 삭제프로세스 작업중, 컴포넌트 구성을어떻게 해야할지 고민하느라, 시간이 가버림, 교회도 가야 했다.
+As development progressed, a fundamental mismatch became clear between  
+**the nature of language** and **the chosen data model**.
 
-08.08.22 삭제프로세스, 컴포넌트 작업하기
+### 1. Language Is Graph-Shaped, Not Relational
 
-18.08.22 세션 로그인 작업중인데, express-session 라이브러리에서 cookie 설정 {
-secure: true 로 해놓는 바람에 쿠키 설정이 안되서 한참 헤멨다.
-}
-09.08.22 데이터를 어떤 레벨에 둘것이냐, 그럼 어떤 패턴을 쓸 것이냐 이게 쟁점인 것 같다
-이질문을 해야하고 대답이 있어야 한다.
-내가 만들려고 하는 것은
-달력이 있고, 데이터를 가져오면, 달력에 표시한다. 그과정에서 가공이 된다.
-그런데 받아온데이터를 전역에 두면, 달력과 관련해서, 날짜 선택등 그 자잘한 데이터를 모두
-전역 스토어 에 둬야 하나
-난 그냥 역활분리를 하고 싶을 뿐
+Language does not behave like clean relational data:
 
-달력에서 활용하는 달력은 달력컴포넌트 를 감싸고 있는 컴포넌트에서 하면 좋겠지만
-그렇다고 해서, state를 통해서 깊은 층위까지 데이터를 전달하고 싶지는 않다.
-그건 코드가 많아질수록 너무 복잡해지기 때문이다.
-context를 사용해야 겠다.
+- Words rarely have fixed meanings
+- Meaning shifts depending on context, emotion, and situation
+- Synonyms, antonyms, images, and usage contexts form **many-to-many, evolving relationships**
+
+This led to the realization that language is inherently closer to a **graph structure** than a relational schema.  
+Modeling these relationships in MySQL felt forced and increasingly restrictive.
+
+---
+
+### 2. The Brain Stores Language as Images, Not Text
+
+Using English daily while living in the UK changed how I understood language recall:
+
+- When speaking or recalling expressions, the brain does not retrieve text first
+- It retrieves **scenes, images, and sensations**, then translates them into words
+
+In other words:
+
+> The brain does not store language as characters — it stores it as imagery.
+
+Although Language Adaptor aimed to support image-based learning conceptually,  
+its underlying data model still treated language as structured text.
+
+---
+
+## 📚 Lessons Learned
+
+- **Language data is inherently graph-shaped**  
+  Words do not exist in isolation. Meanings, contexts, images, and emotions form evolving many-to-many relationships. Modeling language with a relational database introduced unnecessary rigidity.
+
+- **Database choice encodes assumptions about the problem**  
+  Choosing an RDBMS implicitly assumed language could be normalized into stable schemas. This project highlighted how deeply storage models shape product design.
+
+- **Image-first learning aligns better with human cognition**  
+  Language is recalled through scenes and sensations rather than definitions. Treating images as secondary artifacts misses a key cognitive layer.
+
+- **Correct abstractions matter more than feature completeness**  
+  Despite having multiple features, the core abstraction was misaligned. Adding more functionality would not have resolved the foundational issue.
+
+- **Stopping a project can be a design decision, not a failure**  
+  Pausing development was a deliberate choice to avoid reinforcing an incorrect mental model. Recognizing when to stop is part of responsible system design.
+
+---
+
+## 🔚 Conclusion
+
+Language Adaptor is best understood as a **design exploration** rather than a finished product.
+
+It clarified two critical insights:
+
+1. Language systems should be modeled as **graphs of relationships**
+2. Effective language learning tools should be **image-first, not text-first**
+
+Given these realizations, further development was paused to avoid extending a structure that no longer aligned with the problem being explored.
+
+The project remains as a record of this exploration and the lessons learned from it.
